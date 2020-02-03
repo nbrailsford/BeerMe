@@ -1,13 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Brewerys from "./Brewreys/Brewery";
 
 class HomePage extends React.Component {
+  state = { brewery: "", type: "", ratting: 0 };
   render() {
     return (
-      <header>
-        <h1>Hello</h1>
-        <Link to="/">Sign Up</Link>
-      </header>
+      <div>
+        <header>
+          <h1>BEER ME</h1>
+          <Link to="/">Sign Out</Link>
+        </header>
+        <Brewerys />
+      </div>
     );
   }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./SignIn.css";
 
@@ -10,7 +9,15 @@ class SignUp extends React.Component {
         <form action="/signup" method="most" className="signup-form">
           <fieldset>
             <legend>Sign Up</legend>
-            <label for="user-email">Email</label>
+            <label htmlFor="state">State</label>
+            <input
+              type="text"
+              placeholder="Colorado"
+              name="user-state"
+              id="user-state"
+              required
+            />
+            <label htmlFor="user-email">Email</label>
             <input
               type="email"
               placeholder="name@mail.com"
@@ -18,7 +25,7 @@ class SignUp extends React.Component {
               id="user-email"
               required
             />
-            <label for="user-password">Password</label>
+            <label htmlFor="user-password">Password</label>
             <input
               placeholder="passWoRd123"
               id="user-password"
