@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Brewerys from "./Brewreys/Brewery";
+import Location from "./locatioins/location";
 
 class HomePage extends React.Component {
   state = { brewery: "", type: "", ratting: 0 };
@@ -11,7 +11,7 @@ class HomePage extends React.Component {
           <h1>BEER ME</h1>
           <Link to="/">Sign Out</Link>
         </header>
-        <Brewerys />
+        <Location />
       </div>
     );
   }

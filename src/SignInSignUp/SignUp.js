@@ -41,6 +41,7 @@ class SignUp extends React.Component {
             Already have an account?
             <Link to="/homePage"> Sign In</Link>
           </p>
+          <p> sign up form is not set up yet. click Sign In to continue</p>
         </footer>
       </>
     );

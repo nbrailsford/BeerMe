@@ -38,7 +38,7 @@ fieldset {
 input[type="email"],
 input[type="password"],
 button[type="submit"],
-input[type="zip-code"] {
+input[type="text"] {
   display: block;
   width: 100%;
   height: auto;

@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import "./brewery.css";
 
 export default class Brewerys extends React.Component {
   state = {
@@ -16,13 +17,16 @@ export default class Brewerys extends React.Component {
   }
   render() {
     return (
-      <ul>
-        {this.state.brewerys.map((brewery, id) => (
-          <li key={brewery.id}>
-            {brewery.name}, {brewery.brewery_type}
-          </li>
+      <div className="brewerys">
+        {this.state.brewerys.map(brewery => (
+          <div className="breweryContainer" key={brewery.id}>
+            <h3>
+              {brewery.name}, {brewery.brewery_type}
+            </h3>
+            <button location={brewery.street}>location</button>
+          </div>
         ))}
-      </ul>
+      </div>
     );
   }
 }
