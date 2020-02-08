@@ -23,7 +23,9 @@ export default class Brewerys extends React.Component {
             <h3>
               {brewery.name}, {brewery.brewery_type}
             </h3>
-            <button location={brewery.street}>location</button>
+            <a href={brewery.website_url} target="blank">
+              Web Site
+            </a>
           </div>
         ))}
       </div>

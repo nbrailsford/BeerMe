@@ -1,0 +1,8 @@
+.breweryContainer {
+  width: 100vw;
+  height: 90px;
+  background-color: rgb(200, 200, 200);
+  border: 2px solid black;
+  padding: 5px;
+  margin: auto;
+}

@@ -6,6 +6,11 @@ body {
   font-size: 18px;
 }
 
+/* temperary fade until implemented */
+form {
+  opacity: 0.3;
+}
+
 body * {
   box-sizing: border-box;
 }
