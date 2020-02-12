@@ -1,4 +1,22 @@
 .breweryContainer {
+  position: relative;
+  top: 10%;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   text-align: left;
+}
+
+.breweryContainer > p {
+  position: absolute;
+  left: 60%;
+}
+
+a {
+  text-decoration: none;
+  align-self: center;
+}
+
+a:hover {
+  color: rgb(126, 7, 7);
 }

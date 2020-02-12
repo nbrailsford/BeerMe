@@ -121,3 +121,11 @@ button[type="submit"]:focus {
 .footer a:hover {
   color: #e7f1f9;
 }
+
+a.Link {
+  color: rgb(238, 199, 127);
+}
+
+a.Link:hover {
+  color: rgb(243, 154, 37);
+}

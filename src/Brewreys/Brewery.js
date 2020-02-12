@@ -20,9 +20,8 @@ export default class Brewerys extends React.Component {
       <div className="brewerys">
         {this.state.brewerys.map(brewery => (
           <div className="breweryContainer" key={brewery.id}>
-            <h3>
-              {brewery.name}, {brewery.brewery_type}
-            </h3>
+            <h3>{brewery.name}</h3>
+            <p>{brewery.brewery_type}</p>
             <a href={brewery.website_url} target="blank">
               Web Site
             </a>
