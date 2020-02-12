@@ -23,7 +23,7 @@ export default class Brewerys extends React.Component {
           <div className="breweryContainer" key={brewery.id}>
             <h3>{brewery.name}</h3>
             <p>{brewery.brewery_type}</p>
-            <a href={brewery.website_url} target="blank">
+            <a href={brewery.website_url} target="blank" className="link">
               Web Site
             </a>
             <StarRatting />
