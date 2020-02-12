@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import StarRatting from "./StarRatting.js";
 import "./brewery.css";
 
 export default class Brewerys extends React.Component {
@@ -25,6 +26,7 @@ export default class Brewerys extends React.Component {
             <a href={brewery.website_url} target="blank">
               Web Site
             </a>
+            <StarRatting />
           </div>
         ))}
       </div>
