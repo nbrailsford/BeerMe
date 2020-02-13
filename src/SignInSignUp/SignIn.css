@@ -7,7 +7,7 @@ body {
 }
 
 /* temperary fade until implemented */
-form {
+.signup-form {
   opacity: 0.3;
 }
 

@@ -5,12 +5,15 @@ import "./brewery.css";
 
 export default class Brewerys extends React.Component {
   state = {
-    brewerys: []
+    brewerys: [],
+    Location: ""
   };
 
   componentDidMount() {
     axios
-      .get("https:api.openbrewerydb.org/breweries?by_state=Colorado")
+      .get(
+        `https:api.openbrewerydb.org/breweries?by_state=${this.props.Location}`
+      )
       .then(res => {
         console.log(res);
         this.setState({ brewerys: res.data });

@@ -33,18 +33,19 @@ class SignUp extends React.Component {
               required
             />
             <button type="submit">Sign Up</button>
+            <p>
+              Already have an account?
+              <Link to="/homePage" className="Link">
+                {" "}
+                Sign In
+              </Link>
+            </p>
           </fieldset>
         </form>
 
         <footer role="contentinfo" className="footer">
-          <p>
-            Already have an account?
-            <Link to="/homePage" className="Link">
-              {" "}
-              Sign In
-            </Link>
-          </p>
           <p> sign up form is not set up yet. click "SIGN IN" to continue</p>
+          <Link to="/InfoPage">Click here to get started</Link>
         </footer>
       </>
     );
