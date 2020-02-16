@@ -44,8 +44,8 @@ class SignUp extends React.Component {
         </form>
 
         <footer role="contentinfo" className="footer">
-          <p> sign up form is not set up yet. click "SIGN IN" to continue</p>
-          <Link to="/InfoPage">Click here to get started</Link>
+          <p> sign up form is not set up yet. click below to continue</p>
+          <Link to="/HomePage">Click here to get started</Link>
         </footer>
       </>
     );
